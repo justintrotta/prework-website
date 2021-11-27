@@ -7,9 +7,9 @@ function seizureWarning(){
 
 function partyTime(){
     while (true){
-        setTimeout(seizureWarning(), 500)
+        setTimeout(seizureWarning(), 500);
     }
 }
 
 
-document.addEventListener("keydown", partyTime())
+document.addEventListener("keydown", partyTime());
