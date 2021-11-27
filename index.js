@@ -1,15 +1,14 @@
-background = document.body.style.backgroundColor;
 
-function seizureWarning(){
+function randomColor(){
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
-    background = `#${randomColor}`;
+    bg = `#${randomColor}`;
+    console.log(bg)
+    return bg;
 }
 
-function partyTime(){
-    while (true){
-        setTimeout(seizureWarning(), 500);
-    }
-}
+document.addEventListener("keydown", function event(){
 
-
-document.addEventListener("keydown", partyTime());
+    document.body.style.backgroundColor = randomColor();
+    console.log(event);
+    console.log(document.body.style.backgroundColor);
+});
